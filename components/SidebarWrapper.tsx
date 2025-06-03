@@ -14,7 +14,7 @@ export default function SidebarWrapper({ children }: { children: ReactNode }) {
   );
 }
 
-export function toggleSideBar() {
+export function useToggleSideBar() {
   const sideBarContext = useSideBarContext();
   return sideBarContext.setSidebarOpen(!sideBarContext.sidebarOpen);
 }
