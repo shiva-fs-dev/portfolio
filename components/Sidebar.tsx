@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
-import SidebarWrapper, { toggleSideBar } from './SidebarWrapper';
+import SidebarWrapper, { useToggleSideBar } from './SidebarWrapper';
 
 export default function Sidebar() {
   const navigation = [
@@ -31,7 +31,7 @@ export default function Sidebar() {
             <Link
               key={item.name}
               href={item.href}
-              // onClick={toggleSideBar}
+              // onClick={useToggleSideBar}
               className="block px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               {item.name}
