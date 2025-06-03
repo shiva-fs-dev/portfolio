@@ -28,15 +28,15 @@ export default function AboutPage() {
                 Currently, I’m diving into{' '}
                 <span className="text-yellow-500 dark:text-yellow-300 text-2xl font-bold">AWS</span>{' '}
                 to take my skills to the next level, and I’m always looking for
-                ways to improve and learn new things. Whether it's solving bugs,
+                ways to improve and learn new things. {`Whether it's solving bugs`},
                 optimizing workflows, or building something from scratch — I’m
                 here for it all.
               </p>
 
               <p className="mt-6 text-lg text-gray-900 dark:text-gray-100">
-                If you're looking for a developer who’s passionate about both
-                the tech and the process of building awesome things, let’s
-                connect! 🚀
+                {`If you're looking for a developer who’s passionate about both
+                                the tech and the process of building awesome things, let’s
+                                connect!`} 🚀
               </p>
             </div>
           </div>

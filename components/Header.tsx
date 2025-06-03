@@ -35,4 +35,4 @@ export default function Header({children}: {children: ReactNode}) {
   );
 }
 
-export const usesideBarContext = () => useContext(sideBarContext);
+export const useSideBarContext = () => useContext(sideBarContext);

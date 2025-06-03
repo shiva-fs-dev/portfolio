@@ -1,8 +1,8 @@
 'use client';
-import { usesideBarContext } from '@/components/Header';
+import { useSideBarContext } from '@/components/Header';
 import { ReactNode } from 'react';
 export default function SidebarWrapper({ children }: { children: ReactNode }) {
-  const sideBarContext = usesideBarContext();
+  const sideBarContext = useSideBarContext();
   return (
     <aside
       className={`${
@@ -15,6 +15,6 @@ export default function SidebarWrapper({ children }: { children: ReactNode }) {
 }
 
 export function toggleSideBar() {
-  const sideBarContext = usesideBarContext();
+  const sideBarContext = useSideBarContext();
   return sideBarContext.setSidebarOpen(!sideBarContext.sidebarOpen);
 }

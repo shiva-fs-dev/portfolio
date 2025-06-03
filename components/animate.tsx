@@ -1,7 +1,7 @@
 'use client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-export default function animate({ children }: { children: React.ReactNode }) {
+export default function Animate({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   return (
     <AnimatePresence mode="popLayout">
