@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <div className="p-8">
+    <div className="">
       <h1 className="text-4xl font-bold mb-6">About Me</h1>
       <section className="dark:bg-gray-950 text-gray-900 dark:text-white px-6 py-12 md:py-20 transition-colors duration-300">
         <div className="max-w-4xl mx-auto text-center">
