@@ -29,16 +29,16 @@ export default function AboutPage() {
                 Currently, I’m diving into{' '}
                 <span className="text-yellow-500 dark:text-yellow-300 text-2xl font-bold">
                   AWS
-                </span>{' '}
+                </span>{` 
                 to take my skills to the next level, and I’m always looking for
                 ways to improve and learn new things. Whether it's solving bugs,
                 optimizing workflows, or building something from scratch — I’m
-                here for it all.
+                here for it all.`}
               </p>
 
               <p className="mt-6 text-lg text-gray-900 dark:text-gray-100">
-                If you're looking for a developer who’s passionate about both
-                the tech and the process of building awesome things,{' '}
+                {`If you're looking for a developer who’s passionate about both
+                the tech and the process of building awesome things, `}
                 <a
                   href="/contact"
                   className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-2 border-b-4 border-blue-800 hover:border-blue-700 rounded shadow transition"
