@@ -1,7 +1,7 @@
-import Link from 'next/link';
+// 'use client';
 import ThemeToggleButton from '@/components/ThemeToggleButton';
-import SidebarWrapper, { useToggleSideBar } from './SidebarWrapper';
-
+import SidebarWrapper from './SidebarWrapper';
+import SidebarNavItems from '@/components/SidebarNavItems';
 export default function Sidebar() {
   const navigation = [
     { name: 'Home', href: '/' },
@@ -26,18 +26,19 @@ export default function Sidebar() {
         </p>
       </div>
       <div className="py-4">
-        <nav className="space-y-2">
+        {/* <nav className="space-y-2">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              // onClick={useToggleSideBar}
+              // onClick={()=>useToggleSideBar()}
               className="block px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               {item.name}
             </Link>
           ))}
-        </nav>
+        </nav> */}
+        <SidebarNavItems navData={navigation} />
         <ThemeToggleButton />
       </div>
     </SidebarWrapper>

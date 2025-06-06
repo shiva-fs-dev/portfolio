@@ -27,7 +27,7 @@ export default function SkillsPage() {
           <h1 className="text-4xl font-bold mb-6 break-words">{title}</h1>
           <div className="flex flex-col md:flex-row gap-2">
             {items.map(({ url, logo }, index) => (
-              <div key='index' className="flex-1 m-1 w-full">
+              <div key={index} className="flex-1 m-1 w-full">
                 <a href={url}>
                   <img src={'/achvm/' + logo} />
                 </a>
