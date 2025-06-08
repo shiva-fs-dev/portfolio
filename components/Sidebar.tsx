@@ -2,6 +2,8 @@
 import ThemeToggleButton from '@/components/ThemeToggleButton';
 import SidebarWrapper from './SidebarWrapper';
 import SidebarNavItems from '@/components/SidebarNavItems';
+import { RiExternalLinkLine } from "react-icons/ri";
+
 export default function Sidebar() {
   const navigation = [
     { name: 'Home', href: '/' },
@@ -21,8 +23,8 @@ export default function Sidebar() {
       <div className="text-sm text-zinc-600 dark:text-zinc-400">
         <p className="font-semibold truncate">👨‍💻 B. Shivasubramanian</p>
         {/* <p className="truncate">📞 +91 73051 66435</p> */}
-        <p className="truncate">
-          ✉️ <a href="mailto:bshivas2022@gmail.com">bshivas2022@gmail.com</a>
+        <p className="font-semibold truncate">
+          ✉️ <a href="mailto:bshivas2022@gmail.com">bshivas2022@gmail.com<RiExternalLinkLine className="inline text-blue-400 ms-1"/></a>
         </p>
       </div>
       <div className="py-4">

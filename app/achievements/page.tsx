@@ -1,5 +1,5 @@
 import Script from 'next/script';
-
+import { RiExternalLinkLine } from 'react-icons/ri';
 export default function SkillsPage() {
   const achvm_arr = [
     {
@@ -25,13 +25,19 @@ export default function SkillsPage() {
       {achvm_arr.map(({ title, items }) => (
         <>
           <h1 className="text-4xl font-bold mb-6 break-words">{title}</h1>
-          <div className="flex flex-col md:flex-row gap-2">
+          <div className="flex flex-wrap justify-center md:justify-start gap-2">
             {items.map(({ url, logo }, index) => (
-              <div key={index} className="flex-1 m-1 w-full">
-                <a href={url}>
-                  <img src={'/achvm/' + logo} />
-                </a>
-              </div>
+                <div
+                  key={index}
+                  className="flex-grow min-w-[100px] max-w-[200px] m-1"
+                >
+                  <RiExternalLinkLine className="text-blue-400 float-end"/>
+                  <a href={url} target="_blank">
+                    <img
+                      src={'/achvm/' + logo}
+                    />
+                  </a>
+                </div>
             ))}
           </div>
         </>

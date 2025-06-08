@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shiva-fs-dev.vercel.app/
+
+# Sitemaps
+Sitemap: https://shiva-fs-dev.vercel.app/sitemap.xml

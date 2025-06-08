@@ -3,8 +3,8 @@ import infTech_logo from '/images/inftech.png';
 
 export default function ExperiencePage() {
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold mb-6">Experience</h1>
+    <div className="p-2 md:p-8">
+      <h1 className="text-4xl font-bold mb-6 hidden md:block">Experience</h1>
       <div
         className={`p-4 rounded-xl shadow-md space-y-2 bg-white text-zinc-900 dark:bg-zinc-800 dark:text-white grid grid-cols-8`}
       >

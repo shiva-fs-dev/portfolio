@@ -34,7 +34,7 @@ export default function ThemeToggle({ children }: { children: ReactNode }) {
   };
 
   return (
-    <body className={'dark'}>
+    <body className={'dark bg-gray-950 container lg:max-w-8xl lg:mx-auto'}>
       <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
         {children}
       </ThemeContext.Provider>

@@ -2,7 +2,7 @@ import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 export default function ContactPage() {
   return (
     <div className="p-8">
-      <h1 className="text-4xl font-bold mb-6">Contact</h1>
+      <h1 className="text-4xl font-bold mb-6 hidden md:block">Contact</h1>
       <div className="space-y-2 text-md flex flex-wrap gap-3">
         <p>
           <span>

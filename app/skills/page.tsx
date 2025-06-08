@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function SkillsPage() {
   const skills_arr = [
     {
@@ -102,7 +103,7 @@ export default function SkillsPage() {
   ];
   return (
     <div className="p-8">
-      <h1 className="text-4xl font-bold mb-6">Skills</h1>
+      <h1 className="text-4xl font-bold mb-6 hidden md:block">Skills</h1>
       <div className="space-y-8">
         {skills_arr.map(({ title, items }) => (
           <div key={title}>
@@ -113,7 +114,14 @@ export default function SkillsPage() {
                   key={tech}
                   className="flex flex-col items-center p-4 rounded-xl shadow hover:shadow-lg hover:dark:shadow-gray-800 cursor-pointer transition duration-300 text-center"
                 >
-                  <img src={logo} alt={tech} className="w-12 h-12 mb-2" />
+                  <Image
+                    alt="tce logo"
+                    src={logo}
+                    width={60}
+                    height={60}
+                    unoptimized
+                    className="w-12 h-12 mb-2"
+                  />
                   <div className="text-sm font-medium">{tech}</div>
                   <div className="text-xs text-zinc-500">{exp}</div>
                   <div className="text-xs text-zinc-400 italic">{source}</div>

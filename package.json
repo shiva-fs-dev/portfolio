@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@types/node": "20.6.2",
@@ -18,6 +19,7 @@
     "framer-motion": "^12.7.4",
     "lucide-react": "^0.488.0",
     "next": "13.5.1",
+    "next-sitemap": "^4.2.3",
     "postcss": "^8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",

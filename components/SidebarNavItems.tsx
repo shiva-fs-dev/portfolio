@@ -14,10 +14,15 @@ export default function SidebarNavItems({
           <Link
             key={item.name}
             href={item.href}
-            onClick={() =>
-              sideBarContext.setSidebarOpen(!sideBarContext.sidebarOpen)
-            }
-            className="block px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            onClick={() => {
+              sideBarContext.setActiveTab(item.name);
+              sideBarContext.setSidebarOpen(!sideBarContext.sidebarOpen);
+            }}
+            className={`block px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 ${
+              sideBarContext.activeTab == item.name
+                ? 'bg-gray-100 dark:bg-gray-800'
+                : ''
+            }`}
           >
             {item.name}
           </Link>
