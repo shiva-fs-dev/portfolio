@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Portfolio Website | Shivasubramanian',
   description:
-    'Shivasubramanian professional portfolio showcasing experience and skills, Full stack developer, Kovilpatti, Tamilnadu, India',
+  'Shivasubramanian professional portfolio showcasing experience and skills, Full stack developer, Kovilpatti, Tamilnadu, India',
   keywords:
-    'Shiva,subramanian,coldfusion,2,experienced,react,fullstack,js,java,TCE,MCA',
+  'Shiva,subramanian,coldfusion,2,experienced,react,fullstack,js,java,TCE,MCA',
   robots: 'index, follow',
   openGraph: {
     type: 'website',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Portfolio Website | Shivasubramanian',
     description:
-      'Shivasubramanian professional portfolio showcasing experience and skills, Full stack developer, Kovilpatti, Tamilnadu, India',
+    'Shivasubramanian professional portfolio showcasing experience and skills, Full stack developer, Kovilpatti, Tamilnadu, India',
     images: ['/images/pscreenshot.jpg'],
   },
   icons: {
@@ -41,12 +41,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="Tf01kPng-Q3P6_J79oRz3u2gruTGlbZAAN6KIBLdAIs"
-        />
-      </head>
+    <head>
+      <meta
+        name="google-site-verification"
+        content="Tf01kPng-Q3P6_J79oRz3u2gruTGlbZAAN6KIBLdAIs"
+      />
+    </head>
+    <body className="dark">
       <ThemeToggle>
         <Header>
           <div className="flex flex-row font-sans transition-colors duration-300 bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-white">
@@ -57,6 +58,7 @@ export default function RootLayout({
           </div>
         </Header>
       </ThemeToggle>
+    </body>
     </html>
-  );
+    );
 }
