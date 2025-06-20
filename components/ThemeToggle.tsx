@@ -34,10 +34,12 @@ export default function ThemeToggle({ children }: { children: ReactNode }) {
   };
 
   return (
-    <div className={'dark:bg-zinc-900 bg-zinc-50 container lg:max-w-8xl lg:mx-auto'}>
-      <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-        {children}
-      </ThemeContext.Provider>
+    <div className={'dark:bg-zinc-900 bg-zinc-50'}>
+      <div className={'container lg:max-w-8xl lg:mx-auto'}>
+        <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
+          {children}
+        </ThemeContext.Provider>
+      </div>
     </div>
   );
 }
