@@ -52,7 +52,7 @@ export default function RootLayout({
         <Header>
           <div className="flex flex-row font-sans transition-colors duration-300 bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-white">
             <Sidebar />
-            <main className="flex-1 h-[92dvh] md:h-[100dvh] md:p-6 overflow-y-auto transition-colors duration-300">
+            <main className="flex-1 h-[92dvh] md:h-[100dvh] md:p-6 overflow-y-auto transition-colors duration-300 no-scrollbar">
               {children}
             </main>
           </div>
